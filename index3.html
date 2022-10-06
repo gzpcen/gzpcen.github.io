@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<h1 id="demo"></h1>
+<script>
+var myVar = setInterval(function(){ myTimer() }, 33);
+function myTimer() {
+var time0 = Date.parse("2021/9/1 8:00");
+var time1 = new Date().getTime(); 
+var time2 = Date.parse("2024/6/9 18:15");
+var UTN = time1-time0;
+var TT = time2-time0;
+var PERC = UTN/TT*100;
+var PERCN = "你的高中旅程已过去:<br>"+PERC.toFixed(7)+"%";
+document.getElementById("demo").innerHTML = PERCN;
+}
+</script>
+
+</body>
+</html>
