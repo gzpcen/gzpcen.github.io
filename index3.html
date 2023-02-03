@@ -9,13 +9,13 @@
 <script>
 var myVar = setInterval(function(){ myTimer() }, 33);
 function myTimer() {
-var time0 = Date.parse("2021/9/1 7:30");
+var time0 = Date.parse("2023/1/13 10:30");
 var time1 = new Date().getTime(); 
-var time2 = Date.parse("2024/6/20 12:00");
+var time2 = Date.parse("2023/2/5 12:00");
 var UTN = time1-time0;
 var TT = time2-time0;
 var PERC = UTN/TT*100;
-var PERCN = "你的高中旅程已过去:<br>"+PERC.toFixed(7)+"%";
+var PERCN = "你的寒假已过去:<br>"+PERC.toFixed(7)+"%";
 document.getElementById("demo").innerHTML = PERCN;
 }
 </script>
