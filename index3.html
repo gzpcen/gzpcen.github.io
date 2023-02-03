@@ -15,7 +15,7 @@ var time2 = Date.parse("2023/2/5 12:00");
 var UTN = time1-time0;
 var TT = time2-time0;
 var PERC = UTN/TT*100;
-var PERCN = "你的寒假已过去:<br>"+PERC.toFixed(7)+"%";
+var PERCN = "你的寒假已过去:<br>"+PERC.toFixed(5)+"%";
 document.getElementById("demo").innerHTML = PERCN;
 }
 </script>
