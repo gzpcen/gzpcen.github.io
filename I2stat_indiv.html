@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="pass.js"></script>
+    <meta charset="utf-8">
+    <title>ECharts 柱状图示例</title>
+    <!-- 引入 ECharts 文件 -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="myChart" style="width: 100%; height: 80vh;"></div>
+
+    <script type="text/javascript">
+        // 初始化 ECharts 实例
+        var myChart = echarts.init(document.getElementById('myChart'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'I₂指数',
+                textStyle: {
+                    fontSize: 24, // 设置标题字体大小
+                    align: 'center' // 标题居中对齐
+                }
+            },
+            tooltip: {},
+            legend: {
+                data:['指数']
+            },
+            xAxis: {
+                type: 'category',
+                data: ["他", "丹", "kun", "fxt", "DZQ", "植", "马X", "轮", "鼠", "翠", "cgw", "丁真", "股", "炜", "log", "ljm", "瑞", "wyy", "载", "小楼", "CD", "mwl", "gbr", "hyh", "聂", "zjx", "萧", "ysh", "清", "mush", "ypx", "仁博", "诸", "KK", "mbb", "ch", "明辉", "蔚然", "ly", "wyk", "zzq", "常ys"],
+                axisLabel: {
+                    interval: 0, // 强制显示所有x轴标签
+                    rotate: 45 // 旋转角度
+                }
+            },
+            yAxis: {},
+            dataZoom: [
+                {
+                    type: 'slider',
+                    show: true,
+                    xAxisIndex: [0],
+                    start: 0,
+                    end: 30 // 初始滑动条显示范围
+                }
+            ],
+            series: [{
+                name: '典蒸汽浓度',
+                type: 'bar',
+                data: [149,27,23,21,19,13,12,9,8,8,7,7,6,6,6,6,6,6,5,5,4,4,4,4,4,4,3,3,3,3,3,2,1,1,1,1,1,1,1,1,1,1],
+                label: {
+                    show: true, // 显示数据标签
+                    position: 'top' // 数据标签显示在柱子顶部
+                }
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
