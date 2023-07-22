@@ -3,6 +3,10 @@
 <head>
   <title>抽卡！</title>
   <style>
+    @font-face {
+  font-family: 'ys';
+  src: url("ZH-CN.TTF") format('truetype');
+}
     body {
       margin: 0;
       padding: 0;
@@ -24,13 +28,14 @@
     }
     #result {
       position: fixed;
-      top: -10%;
+      top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 520px; /* 修改为180px */
+      font-size: 400px; /* 修改为180px */
       z-index: 9999;
       display: none;
       color: white;
+      font-family: 'ys';
     }
   </style>
   <script>
