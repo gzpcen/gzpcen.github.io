@@ -3,22 +3,67 @@
 <head>
 <meta charset="utf-8">
 <title>文献目录</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        color: #666;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .issue {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    li {
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+</style>
 </head>
 
 <body>
-    <h1>《████号未知生物观察记录》目录</h1>
-    <h2>正刊</h2>
-    <li><a href="./2023ALL.html">2023年第一卷全文</a></li>
-    <li>2021~2022刊 (未收录)</li>
-    <li><a href="./202303A.html">2023年3月上刊</a></li>
-    <li><a href="./202303B.html">2023年3月下刊</a></li>
-    <li><a href="./202304A.html">2023年4月第1刊</a></li>
-    <li><a href="./202304B.html">2023年4月第2刊</a></li>
-    <li><a href="./202304C.html">2023年4月第3刊</a></li>
-    <h2>番外</h2>
-    <li><a href="./202303Z.html">2023年3月番外</a></li>
-    <h2>统计</h2>
-    <li><a href="I2stat_indiv.html">按对象</a></li>
-    <li><!--<a href="./202303Z.html">-->按日期<!--</a>--></li>
+    <h1>文献目录</h1>
+    
+    <div class="issue">
+        <h2>正刊</h2>
+        <ul>
+            <li><a href="./202303A.html">2023年3月上刊</a></li>
+            <li><a href="./202303B.html">2023年3月下刊</a></li>
+            <li><a href="./202303Z.html">2023年3月番外</a></li>
+            <li><a href="./202304A.html">2023年4月第1刊</a></li>
+            <li><a href="./202304B.html">2023年4月第2刊</a></li>
+            <li><a href="./202304C.html">2023年4月第3刊</a></li>
+            <li><a href="./2023ALL.html">2023年第一卷全文</a></li>
+        </ul>
+    </div>
+    <div class="issue">
+        <h2>统计(20230620)</h2>
+        <ul>
+            <li><a href="I2stat_indiv.html">按对象</a></li>
+            <li><!--<a href="./202303Z.html">-->按日期<!--</a>--></li>
+        </ul>
+    </div>
 </body>
 </html>
