@@ -1,0 +1,624 @@
+<meta name=renderer content=webkit>
+<script src=jmin.js></script>
+<style type=text/css>td {font-size: 14px;line-height: 24px;} th {font-size: 14px;line-height: 25px; }body {font-size: 14px;}a {	text-decoration: none;}
+.border1{border:1px solid #000000;height:1px;width:1px;font-weight: bold;padding: 2px;}
+td {font-family: "Comic Sans MS";font-size:16px;font-weight:200;line-height:26px;}
+th {font-family: "Comic Sans MS";font-size:18px;font-weight:500;line-height:38px;}
+.button1 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #6688e3} 
+A.button1 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button1:visited {	TEXT-DECORATION: none}A.button1:active {	TEXT-DECORATION: none}
+A.button1:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button2 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #FB7E9B} 
+A.button2 {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button2:visited {	TEXT-DECORATION: none}
+A.button2:active {	TEXT-DECORATION: none}
+A.button2:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button1_white {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #6688e3; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #ffffff} 
+A.button1_white {FONT-WEIGHT: normal; COLOR: #666666; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button1_white:visited {TEXT-DECORATION: none;border: none #FFFFFF;}
+A.button1_white:hover {cursor:pointer;BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button1_big {BORDER-RIGHT: thin outset; PADDING-RIGHT: 14px; BORDER-TOP: thin outset; PADDING-LEFT: 14px; line-height:50px;
+FONT-SIZE: 34px; PADDING-BOTTOM: 14px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 14px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simhei; BACKGROUND-COLOR: #6688e3} 
+A.button1_big {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button1_big:visited {	TEXT-DECORATION: none}A.button1:active {	TEXT-DECORATION: none}
+A.button1_big:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button2_big {BORDER-RIGHT: thin outset; PADDING-RIGHT: 14px; BORDER-TOP: thin outset; PADDING-LEFT: 14px; line-height:50px;
+FONT-SIZE: 34px; PADDING-BOTTOM: 14px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 14px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simhei; BACKGROUND-COLOR: #FB7E9B} 
+A.button2_big {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button2_big:visited {	TEXT-DECORATION: none}
+A.button2_big:active {	TEXT-DECORATION: none}
+A.button2_big:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button3 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height: 32px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px;height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #FB7E9B} 
+A.button3 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button3:visited {	TEXT-DECORATION: none}
+A.button3:active {	TEXT-DECORATION: none}
+A.button3:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button4 {BORDER-RIGHT: thin outset; height=30;PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #FB7E9B} 
+A.button4 {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button4:visited {	TEXT-DECORATION: none}
+A.button4:active {	TEXT-DECORATION: none}
+A.button4:hover {	PADDING-TOP:7px;BORDER-RIGHT: thin inset;height=30;  BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset;  TEXT-DECORATION: none}
+.button88 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #FB7E9B} 
+A.button88 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #BE0FC0; TEXT-DECORATION: none}
+A.button88:visited {	TEXT-DECORATION: none}
+A.button88:active {	TEXT-DECORATION: none}
+A.button88:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #00ff00; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button5 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #Ffffff} 
+A.button5 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button5:visited {	TEXT-DECORATION: none}
+A.button5:active {	TEXT-DECORATION: none}
+A.button5:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button8 {BORDER-RIGHT: thin outset; PADDING-RIGHT:22px; BORDER-TOP: thin outset; PADDING-LEFT: 22px; 
+FONT-SIZE: 16px; font-weight:900;PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simsun; BACKGROUND-COLOR: #FEEABF} 
+A.button8 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #FEEABF; TEXT-DECORATION: none}
+A.button8:visited {	TEXT-DECORATION: none}
+A.button8:active {	TEXT-DECORATION: none}
+A.button8:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button7 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #ffffff; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #868686} 
+A.button7 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #868686; TEXT-DECORATION: none}
+A.button7:visited {	TEXT-DECORATION: none}
+A.button7:active {	TEXT-DECORATION: none}
+A.button7:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.comic50 {font-family: "Comic Sans MS";font-size:50px;font-weight:900;}
+.comic60 {font-family: "Comic Sans MS";font-size:60px;font-weight:900;}
+.button11 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #DFFDD9} 
+A.button11 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #DFFDD9; TEXT-DECORATION: none}
+A.button11:visited {	TEXT-DECORATION: none}
+A.button11:active {	TEXT-DECORATION: none}
+A.button11:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button12 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: ËÎÌå; BACKGROUND-COLOR: #FDFDD9} 
+A.button12 {FONT-WEIGHT: normal;  COLOR: #000000; BACKGROUND-COLOR: #FDFDD9; TEXT-DECORATION: none}
+A.button12:visited {	TEXT-DECORATION: none}
+A.button12:active {	TEXT-DECORATION: none}
+A.button12:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.comic15 {font-family: "Comic Sans MS";font-size:15px;font-weight:600;line-height:20px;}
+.comic40 {font-family: "Comic Sans MS";font-size:40px;font-weight:900;line-height:55px;}
+.comic35 {font-family: "Comic Sans MS";font-size:35px;font-weight:500;}
+.comic30 {font-family: "Comic Sans MS";font-size:30px;font-weight:900;}
+.comic20 {font-family: "Comic Sans MS";font-size:20px;font-weight:900;}
+.comic20red {font-family: "Comic Sans MS";font-size:20px;font-weight:900;COLOR: #ff0000;}
+.comic20green {font-family: "Comic Sans MS";font-size:20px;font-weight:900;COLOR: #00ff00;}
+.comic18 {font-family: "Comic Sans MS";font-size:18px;font-weight:900;}
+.comic16 {font-family: "Comic Sans MS";font-size:16px;font-weight:500;}
+.comic14 {font-family: "Comic Sans MS";font-size:14px;font-weight:300;}
+.comic22 {font-family: "Comic Sans MS";font-size:22px;font-weight:300;}
+.comic25 {font-family: "Comic Sans MS";font-size:25px;font-weight:300;}
+.simyou14 {font-family:simyou;font-size:14px;font-weight:100;}
+.simyou15 {font-family:simyou;font-size:15px;font-weight:200;}
+.simyou16 {font-family:simyou;font-size:16px;font-weight:200;}
+.simyou17 {font-family:simyou;font-size:17px;font-weight:200;}
+.feng10 {font-family: "simsun";font-size:10px;font-weight:100;}
+.feng12 {font-family: "simsun";font-size:12px;font-weight:100;}
+.yellow12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #ffff99;}
+.Gray12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #444444;}
+.purple12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #d34df7;line-height: 14px;}
+.purple14 {font-family: "simsun";font-size:14px;font-weight:100;COLOR: #d34df7;line-height: 14px;}
+.feng14 {font-family: "simsun";font-size:14px;font-weight:100;}
+.feng16 {font-family: "Comic Sans MS";font-size:16px;font-weight:500;}
+.feng20 {font-family: "simhei";font-size:20px;font-weight:500;}
+.feng30 {font-family: "simhei";font-size:30px;font-weight:500;line-height: 42px;}
+.heiti16 {font-family: "simhei";font-size:16px;font-weight:900;}
+.songti8 {font-family: "simsun";font-size:8px;font-weight:300;}
+.songti14 {font-family: "simsun";font-size:14px;font-weight:900;}
+.songti16 {font-family: "simsun";font-size:16px;font-weight:900;}
+.songti18 {font-family: "simsun";font-size:18px;font-weight:900;}
+.songti20 {font-family: "simsun";font-size:20px;font-weight:900;}
+.songti25 {font-family: "simsun";font-size:25px;font-weight:900;}
+.songti30 {font-family: "simsun";font-size:30px;font-weight:900;}
+.songti35 {font-family: "simsun";font-size:35px;font-weight:900;}
+.songti40 {font-family: "simsun";font-size:40px;font-weight:900;}
+.songti45 {font-family: "simsun";font-size:45px;font-weight:900;line-height: 55px;}
+.songti50 {font-family: "simsun";font-size:50px;font-weight:900;}
+.songti55 {font-family: "simsun";font-size:55px;font-weight:900;}
+.green12 {font-family: "simsun";font-size:12px;font-weight:900;COLOR: #1B6003;line-height: 18px;}
+.green14 {font-family: "simsun";font-size:14px;font-weight:300;COLOR: #009900;line-height: 24px;}
+.feng26 {font-family: "Comic Sans MS";font-size:26px;font-weight:900;}
+.simhei14 {font-family: "simhei";font-size:14px;font-weight:600;}
+.simhei16 {font-family: "simhei";font-size:16px;font-weight:900;}
+.simhei18 {font-family: "simhei";font-size:18px;font-weight:900;}
+.simhei20 {font-family: "simhei";font-size:20px;font-weight:900;line-height: 26px;}
+.simhei25 {font-family: "simhei";font-size:25px;font-weight:900;line-height: 35px;}
+.simhei30 {font-family: "simhei";font-size:30px;font-weight:900;line-height: 40px;}
+.simhei35 {font-family: "simhei";font-size:35px;font-weight:900;line-height: 40px;color:#333333;}
+.simhei40 {font-family: "simhei";font-size:40px;font-weight:900;line-height: 50px;}
+.simhei30 {font-family: "simhei";font-size:30px;font-weight:900;}
+.simhei50 {font-family: "simhei";font-size:50px;font-weight:900;line-height:60px;}
+.simhei60 {font-family: "simhei";font-size:60px;font-weight:900;line-height:70px;}
+.simhei80 {font-family: "simhei";font-size:80px;font-weight:900;}
+.simhei100 {font-family: "simhei";font-size:100px;font-weight:900;}
+.simhei30_green {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #00ff00;line-height: 40px;}
+.simhei30_red {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #ff0000;line-height: 40px;}
+.simhei30_light_red {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #ff5555;line-height: 40px;}
+.simhei30_yellow {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #fc9400;line-height: 40px;}
+.simhei40_green {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #00ff00;line-height: 70px;}
+.simhei40_red {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #ff0000;line-height: 70px;}
+.simhei40_yellow {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #fc9400;line-height: 70px;}
+.simhei50_green {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #00ff00;line-height: 85px;}
+.simhei50_red {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #ff0000;line-height: 85px;}
+.simhei50_yellow {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #fc9400;line-height: 85px;}
+.simhei60_green {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #00ff00;line-height: 85px;}
+.simhei60_red {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #ff0000;line-height: 85px;}
+.simhei60_yellow {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #fc9400;line-height: 85px;}
+.red60 {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #ff0000;}
+.fix_right_down{position:relative;height:80px;width:80px;position: fixed ! important; right:0px; bottom:0px;}
+</style>
+<body leftmargin=10 topmargin=10>
+<br><br><center><h1>2023Ñ§ÄêÉÏÑ§ÆÚ¸ßÈý12ÔÂÊÐµ÷ÑÐ<br><br>ÓïÎÄµ¥¿ÆÍ³¼Æ</h1></center>
+<br><center><h2><a name=biao1></a>¡¾±í1.5¡¡¡¡¡¡ÓïÎÄ¡¡ ÌâÄ¿²âÁ¿¡¿</h2></center>
+<b>»ù±¾¸ÅÄî£º</b><a href=shuo_ming.htm#biao_zhun_cha target=_blank>±ê×¼²î</a>¡¢<a href=shuo_ming.htm#nan_du target=_blank>ÄÑ¶È</a>¡¢<a href=shuo_ming.htm#qu_fen_du target=_blank>Çø·Ö¶È</a>¡¢<a href=shuo_ming.htm#xin_du target=_blank>ÐÅ¶È</a><br><br>
+<table  width=1370px style=border-collapse:collapse; border=1 bordercolor=#CC3333 cellpadding=4>
+<tr>
+<th width=70px ><a href=ÓïÎÄÍ³¼Æb1.htm >ÌâºÅ <img src=little_arrow1.png border=0></a></th>
+<th  nowrap>¡¡¡¡¡¡¡¡¡¡ÖªÊ¶µã¡¡¡¡¡¡¡¡¡¡</th>
+<th width=200px><a href=ÓïÎÄÍ³¼Æb2.htm >¿¼²éÒªÇó <img src=little_arrow2.png border=0></a></th>
+<th  width=100px bgcolor=efefff >Æ½¾ù·Ö</th>
+<th  width=100px><a href=ÓïÎÄÍ³¼Æb3.htm >ÄÑ¶È <img src=little_arrow2.png border=0></a></th>
+<th  width=100px><a href=ÓïÎÄÍ³¼Æb4.htm >±ê×¼²î <img src=little_arrow2.png border=0></a></th>
+<th  width=100px><a href=ÓïÎÄÍ³¼Æb5.htm >Çø·Ö¶È <img src=little_arrow2.png border=0></a></th>
+<th  width=100px bgcolor=efefff>ÐÅ¶È</th>
+<th  width=400px bgcolor=ffe6bb>ÆÀ¼Û²Î¿¼</th>
+</tr>
+<tr bgcolor=#9fefc9> <th >Õû¾í</th><td></td><td></td>
+<td nowrap ><span class=È«Çø>È«Çø 93.50·Ö<br></span><span class=ÇøÊô>ÇøÊô</span> 94.85·Ö</td>
+<td  nowrap><span class=È«Çø>È«Çø  0.62<br></span><span class=ÇøÊô>ÇøÊô</span>  0.63·Ö</td>
+<td  nowrap><span class=È«Çø>È«Çø 12.37<br></span><span class=ÇøÊô>ÇøÊô</span> 10.45</td>
+<td  nowrap><span class=È«Çø>È«Çø  0.37<br></span><span class=ÇøÊô>ÇøÊô</span>  0.33</td>
+<td  nowrap><span class=È«Çø>È«Çø  0.61<br></span><span class=ÇøÊô>ÇøÊô</span>  0.54</td>
+<td >
+´Ë¾í·ÖÊý½Ï¼¯ÖÐ<br><br>
+Èô´Ë¾íÎª¡°Ñ¡°ÎÐÔ²âÊÔ¡±£¬ÆäÄÑ¶ÈÎª
+Æ«Ò×<br>
+Èô´Ë¾íÎª¡°Æ½Ê±½ÌÑ§ÖÊÁ¿¼ì²â¡±£¬ÆäÄÑ¶ÈÎª
+Æ«ÄÑ<br>
+Èô´Ë¾íÎª¡°Ë®Æ½ÐÔ²âÊÔ¡±£¬ÆäÄÑ¶ÈÎª
+Æ«ÄÑ<br>
+<br>¶Ô²»Í¬ÖªÊ¶ºÍÄÜÁ¦Ë®Æ½¿¼ÉúµÄ¼ø±ð³Ì¶ÈÁ¼ºÃ£¬<br>¸ß·Ö×éÑ§ÉúÓëµÍ·Ö×éÑ§ÉúÇø·Ö¶ÈÁ¼ºÃ<br>
+<br>ÐÅ¶ÈÒ»°ã
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ1</strong>
+</th>
+<td align=left>1ÄÚÈ                                                                                                                                                                                                                                                    </td>
+<td align=left>Àí½â                                                                                                                                                                                                                                                          </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.35·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.39·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.78<br></span><span class=ÇøÊô>ÇøÊô</span>  0.80</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.23<br></span><span class=ÇøÊô>ÇøÊô</span>  1.20</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.24<br></span><span class=ÇøÊô>ÇøÊô</span>  0.21</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ2</strong>
+</th>
+<td align=left>2ÊáÀí¸ÅÀ¨                                                                                                                                                                                                                                                     </td>
+<td align=left>·ÖÎö×ÛºÏ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  0.94·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  0.92·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.31<br></span><span class=ÇøÊô>ÇøÊô</span>  0.31</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.40<br></span><span class=ÇøÊô>ÇøÊô</span>  1.38</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.07<br></span><span class=ÇøÊô>ÇøÊô</span>  0.11</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>¾ùÄÑÒÔµÃ·Ö£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ3</strong>
+</th>
+<td align=left>3·ÖÎöÍÆ¶Ï                                                                                                                                                                                                                                                     </td>
+<td align=left>·ÖÎö×ÛºÏ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.41·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.45·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.80<br></span><span class=ÇøÊô>ÇøÊô</span>  0.82</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.19<br></span><span class=ÇøÊô>ÇøÊô</span>  1.15</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.32<br></span><span class=ÇøÊô>ÇøÊô</span>  0.28</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÒ×Ìâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ6</strong>
+</th>
+<td align=left>                                                                                                                                                                                                                                                    </td>
+<td align=left>Àí½â·ÖÎö                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.81·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.82·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.60<br></span><span class=ÇøÊô>ÇøÊô</span>  0.61</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.47<br></span><span class=ÇøÊô>ÇøÊô</span>  1.46</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.22<br></span><span class=ÇøÊô>ÇøÊô</span>  0.22</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ7</strong>
+</th>
+<td align=left>7Ð´·¨¼øÉÍ                                                                                                                                                                                                                                                     </td>
+<td align=left>·ÖÎö¼øÉÍ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.01·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.03·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.67<br></span><span class=ÇøÊô>ÇøÊô</span>  0.68</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.41<br></span><span class=ÇøÊô>ÇøÊô</span>  1.40</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.31<br></span><span class=ÇøÊô>ÇøÊô</span>  0.33</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ11</strong>
+</th>
+<td align=left>11³£ÓÃÊµ´Ê                                                                                                                                                                                                                                                    </td>
+<td align=left>Ê¶¼ÇÀí½â                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.16·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.20·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.39<br></span><span class=ÇøÊô>ÇøÊô</span>  0.40</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.46<br></span><span class=ÇøÊô>ÇøÊô</span>  1.47</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.42<br></span><span class=ÇøÊô>ÇøÊô</span>  0.39</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+¸ß·Ö×éÑ§Éú¶àÊýµÃ·Ö£¬<br>µÍ·Ö×éÑ§Éú¶àÊý²»µÃ·Ö£¬<br>Çø·Ö¶ÈÓÅÁ¼
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ12</strong>
+</th>
+<td align=left>12ÎÄÒâÀí½â                                                                                                                                                                                                                                                    </td>
+<td align=left>·ÖÎö×ÛºÏ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.37·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.44·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.79<br></span><span class=ÇøÊô>ÇøÊô</span>  0.81</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.23<br></span><span class=ÇøÊô>ÇøÊô</span>  1.17</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.35<br></span><span class=ÇøÊô>ÇøÊô</span>  0.29</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ15</strong>
+</th>
+<td align=left>15Ð´·¨¼øÉÍ                                                                                                                                                                                                                                                    </td>
+<td align=left>·ÖÎö¼øÉÍ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.14·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.15·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.38<br></span><span class=ÇøÊô>ÇøÊô</span>  0.38</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.46<br></span><span class=ÇøÊô>ÇøÊô</span>  1.46</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.17<br></span><span class=ÇøÊô>ÇøÊô</span>  0.18</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>¾ùÄÑÒÔµÃ·Ö£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ñ¡ÔñÌâ10</strong>
+</th>
+<td align=left>10ÎÄÑÔ¶Ï¾ä                                                                                                                                                                                                                                                    </td>
+<td align=left>Àí½â                                                                                                                                                                                                                                                          </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.41·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.43·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.80<br></span><span class=ÇøÊô>ÇøÊô</span>  0.81</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.69<br></span><span class=ÇøÊô>ÇøÊô</span>  0.68</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.01<br></span><span class=ÇøÊô>ÇøÊô</span>  0.01</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÒ×Ìâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú¶¼ÄÜµÃ·Ö£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ4</strong>
+</th>
+<td align=left>4Àí½â·ÖÎö                                                                                                                                                                                                                                                     </td>
+<td align=left>·ÖÎö¸ÅÀ¨                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º4.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.85·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.89·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.71<br></span><span class=ÇøÊô>ÇøÊô</span>  0.72</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.93<br></span><span class=ÇøÊô>ÇøÊô</span>  0.90</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.13<br></span><span class=ÇøÊô>ÇøÊô</span>  0.12</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>µÃ·ÖÇé¿öÀàËÆ£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ5</strong>
+</th>
+<td align=left>5·ÖÎöÌ½¾¿                                                                                                                                                                                                                                                     </td>
+<td align=left>¸ÅÀ¨Ì½¾¿                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º6.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.41·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.45·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.40<br></span><span class=ÇøÊô>ÇøÊô</span>  0.41</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.10<br></span><span class=ÇøÊô>ÇøÊô</span>  1.08</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.12<br></span><span class=ÇøÊô>ÇøÊô</span>  0.11</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>µÃ·ÖÇé¿öÀàËÆ£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ8</strong>
+</th>
+<td align=left>8Ð´·                                                                                                                                                                                                                                                    </td>
+<td align=left>¼øÉÍ                                                                                                                                                                                                                                                          </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º4.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.04·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.08·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.51<br></span><span class=ÇøÊô>ÇøÊô</span>  0.52</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.84<br></span><span class=ÇøÊô>ÇøÊô</span>  0.81</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.16<br></span><span class=ÇøÊô>ÇøÊô</span>  0.14</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>µÃ·ÖÇé¿öÀàËÆ£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ9</strong>
+</th>
+<td align=left>9¼øÉ                                                                                                                                                                                                                                                    </td>
+<td align=left>Ì½¾¿                                                                                                                                                                                                                                                          </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º6.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.45·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.52·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.41<br></span><span class=ÇøÊô>ÇøÊô</span>  0.42</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.32<br></span><span class=ÇøÊô>ÇøÊô</span>  1.29</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.24<br></span><span class=ÇøÊô>ÇøÊô</span>  0.22</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ131</strong>
+</th>
+<td align=left>13(1)ÎÄÑÔ·­Òë                                                                                                                                                                                                                                                 </td>
+<td align=left>Àí½â±í´ï                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º4.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.79·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.86·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.70<br></span><span class=ÇøÊô>ÇøÊô</span>  0.72</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.30<br></span><span class=ÇøÊô>ÇøÊô</span>  1.25</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.34<br></span><span class=ÇøÊô>ÇøÊô</span>  0.29</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ132</strong>
+</th>
+<td align=left>13(2)ÎÄÑÔ·­Òë                                                                                                                                                                                                                                                 </td>
+<td align=left>Àí½â±í´ï                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º4.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.90·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.96·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.73<br></span><span class=ÇøÊô>ÇøÊô</span>  0.74</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.93<br></span><span class=ÇøÊô>ÇøÊô</span>  0.86</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.21<br></span><span class=ÇøÊô>ÇøÊô</span>  0.17</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ141</strong>
+</th>
+<td align=left>14ÄÚÈÝ·ÖÎö                                                                                                                                                                                                                                                    </td>
+<td align=left>·ÖÎö×ÛºÏ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.26·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.30·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.42<br></span><span class=ÇøÊô>ÇøÊô</span>  0.43</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.82<br></span><span class=ÇøÊô>ÇøÊô</span>  0.80</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.25<br></span><span class=ÇøÊô>ÇøÊô</span>  0.23</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ161</strong>
+</th>
+<td align=left>16ÄÚÈÝÓëÐ´·¨¼øÉÍ                                                                                                                                                                                                                                              </td>
+<td align=left>¼øÉÍÆÀ¼Û                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º6.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.23·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.28·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.37<br></span><span class=ÇøÊô>ÇøÊô</span>  0.38</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  1.17<br></span><span class=ÇøÊô>ÇøÊô</span>  1.15</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.19<br></span><span class=ÇøÊô>ÇøÊô</span>  0.17</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ171</strong>
+</th>
+<td align=left>17(1)Ãû¾äÊ¶¼Ç                                                                                                                                                                                                                                                 </td>
+<td align=left>Ê¶¼ÇÀí½â                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.78·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.86·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.89<br></span><span class=ÇøÊô>ÇøÊô</span>  0.93</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.61<br></span><span class=ÇøÊô>ÇøÊô</span>  0.47</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.24<br></span><span class=ÇøÊô>ÇøÊô</span>  0.12</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÒ×Ìâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ172</strong>
+</th>
+<td align=left>17(2)Ãû¾äÊ¶¼Ç                                                                                                                                                                                                                                                 </td>
+<td align=left>Ê¶¼ÇÀí½â                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.33·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.41·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.67<br></span><span class=ÇøÊô>ÇøÊô</span>  0.71</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.93<br></span><span class=ÇøÊô>ÇøÊô</span>  0.89</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.52<br></span><span class=ÇøÊô>ÇøÊô</span>  0.41</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+¸ß·Ö×éÑ§Éú¶àÊýµÃ·Ö£¬<br>µÍ·Ö×éÑ§Éú¶àÊý²»µÃ·Ö£¬<br>Çø·Ö¶ÈÓÅÁ¼
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ173</strong>
+</th>
+<td align=left>17(3)Ãû¾äÊ¶¼Ç                                                                                                                                                                                                                                                 </td>
+<td align=left>Ê¶¼ÇÀí½â                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.07·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.11·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.54<br></span><span class=ÇøÊô>ÇøÊô</span>  0.56</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.98<br></span><span class=ÇøÊô>ÇøÊô</span>  0.97</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.27<br></span><span class=ÇøÊô>ÇøÊô</span>  0.21</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ181</strong>
+</th>
+<td align=left>18(1)¾ä×Ó²¹Ð´                                                                                                                                                                                                                                                 </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.58·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.60·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.79<br></span><span class=ÇøÊô>ÇøÊô</span>  0.80</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.77<br></span><span class=ÇøÊô>ÇøÊô</span>  0.75</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.20<br></span><span class=ÇøÊô>ÇøÊô</span>  0.18</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ182</strong>
+</th>
+<td align=left>18(2)¾ä×Ó²¹Ð´                                                                                                                                                                                                                                                 </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.38·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.41·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.69<br></span><span class=ÇøÊô>ÇøÊô</span>  0.71</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.74<br></span><span class=ÇøÊô>ÇøÊô</span>  0.73</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.28<br></span><span class=ÇøÊô>ÇøÊô</span>  0.25</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ191</strong>
+</th>
+<td align=left>19(1)²¡¾äÐÞ¸Ä                                                                                                                                                                                                                                                 </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.68·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.70·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.84<br></span><span class=ÇøÊô>ÇøÊô</span>  0.85</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.64<br></span><span class=ÇøÊô>ÇøÊô</span>  0.62</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.18<br></span><span class=ÇøÊô>ÇøÊô</span>  0.16</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÒ×Ìâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú¶¼ÄÜµÃ·Ö£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ192</strong>
+</th>
+<td align=left>19(2)²¡¾äÐÞ¸Ä                                                                                                                                                                                                                                                 </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  0.62·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  0.62·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.31<br></span><span class=ÇøÊô>ÇøÊô</span>  0.31</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.70<br></span><span class=ÇøÊô>ÇøÊô</span>  0.70</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.03<br></span><span class=ÇøÊô>ÇøÊô</span>  0.02</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>¾ùÄÑÒÔµÃ·Ö£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ193</strong>
+</th>
+<td align=left>19(3)²¡¾äÐÞ¸Ä                                                                                                                                                                                                                                                 </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º2.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.08·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.10·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.54<br></span><span class=ÇøÊô>ÇøÊô</span>  0.55</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.89<br></span><span class=ÇøÊô>ÇøÊô</span>  0.88</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.23<br></span><span class=ÇøÊô>ÇøÊô</span>  0.22</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ201</strong>
+</th>
+<td align=left>20±í´ïÐ§¹û                                                                                                                                                                                                                                                    </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º4.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.71·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.75·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.43<br></span><span class=ÇøÊô>ÇøÊô</span>  0.44</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.90<br></span><span class=ÇøÊô>ÇøÊô</span>  0.88</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.21<br></span><span class=ÇøÊô>ÇøÊô</span>  0.19</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ211</strong>
+</th>
+<td align=left>21±íÒâ·ÖÎö                                                                                                                                                                                                                                                    </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  2.29·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  2.32·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.76<br></span><span class=ÇøÊô>ÇøÊô</span>  0.77</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.99<br></span><span class=ÇøÊô>ÇøÊô</span>  0.96</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.29<br></span><span class=ÇøÊô>ÇøÊô</span>  0.26</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ221</strong>
+</th>
+<td align=left>22±í´ïÐ§¹û                                                                                                                                                                                                                                                    </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º3.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø  1.20·Ö<br></span><span class=ÇøÊô>ÇøÊô</span>  1.22·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.40<br></span><span class=ÇøÊô>ÇøÊô</span>  0.41</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  0.77<br></span><span class=ÇøÊô>ÇøÊô</span>  0.76</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.19<br></span><span class=ÇøÊô>ÇøÊô</span>  0.18</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°½ÏÄÑÌâ¡±£¬<br>
+Çø·Ö¶ÈÉÐ¿É
+</td>
+</tr>
+<tr>
+<td  nowrap><strong>Ö÷¹ÛÌâ231</strong>
+</th>
+<td align=left>23Ð´×÷                                                                                                                                                                                                                                                        </td>
+<td align=left>±í´ïÓ¦ÓÃ                                                                                                                                                                                                                                                      </td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±¾Ìâ·ÖÖµ£º60.0·Ö</span><br><span title=Æ½¾ù·Ö><span class=È«Çø>È«Çø 42.25·Ö<br></span><span class=ÇøÊô>ÇøÊô</span> 42.60·Ö</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>ÄÑ¶È</span><br><span title=ÄÑ¶È><span class=È«Çø>È«Çø  0.70<br></span><span class=ÇøÊô>ÇøÊô</span>  0.71</td>
+<td bgcolor=efefff nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>±ê×¼²î</span><br><span title=±ê×¼²î><span class=È«Çø>È«Çø  5.58<br></span><span class=ÇøÊô>ÇøÊô</span>  4.71</span></td>
+<td bgcolor=ffe6bb nowrap><span style=font-size:16px;font-family:simhei;color:#888888;>Çø·Ö¶È</span><br><span title=Çø·Ö¶È><span class=È«Çø>È«Çø  0.14<br></span><span class=ÇøÊô>ÇøÊô</span>  0.12</span></td>
+<td bgcolor=efefff nowrap><img src=line.jpg></td>
+<td bgcolor=ffe6bb >
+±¾ÌâÊôÓÚ¡°ÖÐµÈÄÑ¶ÈÌâ¡±£¬<br>
+¸ß·Ö×éÑ§ÉúºÍµÍ·Ö×éÑ§Éú<br>µÃ·ÖÇé¿öÀàËÆ£¬<br>Çø·Ö²»³ö
+</td>
+</tr>
+</table><br><br><br><br><br><br><br>

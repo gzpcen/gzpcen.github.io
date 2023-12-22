@@ -1,0 +1,813 @@
+<meta name=renderer content=webkit>
+<script src=jmin.js></script>
+<style type=text/css>td {font-size: 14px;line-height: 24px;} th {font-size: 14px;line-height: 25px; }body {font-size: 14px;}a {	text-decoration: none;}
+.border1{border:1px solid #000000;height:1px;width:1px;font-weight: bold;padding: 2px;}
+td {font-family: "Comic Sans MS";font-size:16px;font-weight:200;line-height:26px;}
+th {font-family: "Comic Sans MS";font-size:18px;font-weight:500;line-height:38px;}
+.button1 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #6688e3} 
+A.button1 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button1:visited {	TEXT-DECORATION: none}A.button1:active {	TEXT-DECORATION: none}
+A.button1:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button2 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #FB7E9B} 
+A.button2 {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button2:visited {	TEXT-DECORATION: none}
+A.button2:active {	TEXT-DECORATION: none}
+A.button2:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button1_white {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #6688e3; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #ffffff} 
+A.button1_white {FONT-WEIGHT: normal; COLOR: #666666; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button1_white:visited {TEXT-DECORATION: none;border: none #FFFFFF;}
+A.button1_white:hover {cursor:pointer;BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button1_big {BORDER-RIGHT: thin outset; PADDING-RIGHT: 14px; BORDER-TOP: thin outset; PADDING-LEFT: 14px; line-height:50px;
+FONT-SIZE: 34px; PADDING-BOTTOM: 14px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 14px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simhei; BACKGROUND-COLOR: #6688e3} 
+A.button1_big {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button1_big:visited {	TEXT-DECORATION: none}A.button1:active {	TEXT-DECORATION: none}
+A.button1_big:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button2_big {BORDER-RIGHT: thin outset; PADDING-RIGHT: 14px; BORDER-TOP: thin outset; PADDING-LEFT: 14px; line-height:50px;
+FONT-SIZE: 34px; PADDING-BOTTOM: 14px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 14px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simhei; BACKGROUND-COLOR: #FB7E9B} 
+A.button2_big {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button2_big:visited {	TEXT-DECORATION: none}
+A.button2_big:active {	TEXT-DECORATION: none}
+A.button2_big:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.button3 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height: 32px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px;height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #FB7E9B} 
+A.button3 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button3:visited {	TEXT-DECORATION: none}
+A.button3:active {	TEXT-DECORATION: none}
+A.button3:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button4 {BORDER-RIGHT: thin outset; height=30;PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #FB7E9B} 
+A.button4 {FONT-WEIGHT: normal;  COLOR: #ffffff; BACKGROUND-COLOR: #FB7E9B; TEXT-DECORATION: none}
+A.button4:visited {	TEXT-DECORATION: none}
+A.button4:active {	TEXT-DECORATION: none}
+A.button4:hover {	PADDING-TOP:7px;BORDER-RIGHT: thin inset;height=30;  BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset;  TEXT-DECORATION: none}
+.button88 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #FB7E9B} 
+A.button88 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #BE0FC0; TEXT-DECORATION: none}
+A.button88:visited {	TEXT-DECORATION: none}
+A.button88:active {	TEXT-DECORATION: none}
+A.button88:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #00ff00; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button5 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #Ffffff} 
+A.button5 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button5:visited {	TEXT-DECORATION: none}
+A.button5:active {	TEXT-DECORATION: none}
+A.button5:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button8 {BORDER-RIGHT: thin outset; PADDING-RIGHT:22px; BORDER-TOP: thin outset; PADDING-LEFT: 22px; 
+FONT-SIZE: 16px; font-weight:900;PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simsun; BACKGROUND-COLOR: #FEEABF} 
+A.button8 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #FEEABF; TEXT-DECORATION: none}
+A.button8:visited {	TEXT-DECORATION: none}
+A.button8:active {	TEXT-DECORATION: none}
+A.button8:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button7 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #ffffff; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #868686} 
+A.button7 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #868686; TEXT-DECORATION: none}
+A.button7:visited {	TEXT-DECORATION: none}
+A.button7:active {	TEXT-DECORATION: none}
+A.button7:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.comic50 {font-family: "Comic Sans MS";font-size:50px;font-weight:900;}
+.comic60 {font-family: "Comic Sans MS";font-size:60px;font-weight:900;}
+.button11 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height=30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #DFFDD9} 
+A.button11 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #DFFDD9; TEXT-DECORATION: none}
+A.button11:visited {	TEXT-DECORATION: none}
+A.button11:active {	TEXT-DECORATION: none}
+A.button11:hover {	PADDING-TOP:7px;height=30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+.button12 {BORDER-RIGHT: thin outset; PADDING-RIGHT: 4px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; line-height:35px;
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: thin outset; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #FDFDD9} 
+A.button12 {FONT-WEIGHT: normal;  COLOR: #000000; BACKGROUND-COLOR: #FDFDD9; TEXT-DECORATION: none}
+A.button12:visited {	TEXT-DECORATION: none}
+A.button12:active {	TEXT-DECORATION: none}
+A.button12:hover {	BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+.comic15 {font-family: "Comic Sans MS";font-size:15px;font-weight:600;line-height:20px;}
+.comic40 {font-family: "Comic Sans MS";font-size:40px;font-weight:900;line-height:55px;}
+.comic35 {font-family: "Comic Sans MS";font-size:35px;font-weight:500;}
+.comic30 {font-family: "Comic Sans MS";font-size:30px;font-weight:900;}
+.comic20 {font-family: "Comic Sans MS";font-size:20px;font-weight:900;}
+.comic20red {font-family: "Comic Sans MS";font-size:20px;font-weight:900;COLOR: #ff0000;}
+.comic20green {font-family: "Comic Sans MS";font-size:20px;font-weight:900;COLOR: #00ff00;}
+.comic18 {font-family: "Comic Sans MS";font-size:18px;font-weight:900;}
+.comic16 {font-family: "Comic Sans MS";font-size:16px;font-weight:500;}
+.comic14 {font-family: "Comic Sans MS";font-size:14px;font-weight:300;}
+.comic22 {font-family: "Comic Sans MS";font-size:22px;font-weight:300;}
+.comic25 {font-family: "Comic Sans MS";font-size:25px;font-weight:300;}
+.simyou14 {font-family:simyou;font-size:14px;font-weight:100;}
+.simyou15 {font-family:simyou;font-size:15px;font-weight:200;}
+.simyou16 {font-family:simyou;font-size:16px;font-weight:200;}
+.simyou17 {font-family:simyou;font-size:17px;font-weight:200;}
+.feng10 {font-family: "simsun";font-size:10px;font-weight:100;}
+.feng12 {font-family: "simsun";font-size:12px;font-weight:100;}
+.yellow12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #ffff99;}
+.Gray12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #444444;}
+.purple12 {font-family: "simsun";font-size:12px;font-weight:100;COLOR: #d34df7;line-height: 14px;}
+.purple14 {font-family: "simsun";font-size:14px;font-weight:100;COLOR: #d34df7;line-height: 14px;}
+.feng14 {font-family: "simsun";font-size:14px;font-weight:100;}
+.feng16 {font-family: "Comic Sans MS";font-size:16px;font-weight:500;}
+.feng20 {font-family: "simhei";font-size:20px;font-weight:500;}
+.feng30 {font-family: "simhei";font-size:30px;font-weight:500;line-height: 42px;}
+.heiti16 {font-family: "simhei";font-size:16px;font-weight:900;}
+.songti8 {font-family: "simsun";font-size:8px;font-weight:300;}
+.songti14 {font-family: "simsun";font-size:14px;font-weight:900;}
+.songti16 {font-family: "simsun";font-size:16px;font-weight:900;}
+.songti18 {font-family: "simsun";font-size:18px;font-weight:900;}
+.songti20 {font-family: "simsun";font-size:20px;font-weight:900;}
+.songti25 {font-family: "simsun";font-size:25px;font-weight:900;}
+.songti30 {font-family: "simsun";font-size:30px;font-weight:900;}
+.songti35 {font-family: "simsun";font-size:35px;font-weight:900;}
+.songti40 {font-family: "simsun";font-size:40px;font-weight:900;}
+.songti45 {font-family: "simsun";font-size:45px;font-weight:900;line-height: 55px;}
+.songti50 {font-family: "simsun";font-size:50px;font-weight:900;}
+.songti55 {font-family: "simsun";font-size:55px;font-weight:900;}
+.green12 {font-family: "simsun";font-size:12px;font-weight:900;COLOR: #1B6003;line-height: 18px;}
+.green14 {font-family: "simsun";font-size:14px;font-weight:300;COLOR: #009900;line-height: 24px;}
+.feng26 {font-family: "Comic Sans MS";font-size:26px;font-weight:900;}
+.simhei14 {font-family: "simhei";font-size:14px;font-weight:600;}
+.simhei16 {font-family: "simhei";font-size:16px;font-weight:900;}
+.simhei18 {font-family: "simhei";font-size:18px;font-weight:900;}
+.simhei20 {font-family: "simhei";font-size:20px;font-weight:900;line-height: 26px;}
+.simhei25 {font-family: "simhei";font-size:25px;font-weight:900;line-height: 35px;}
+.simhei30 {font-family: "simhei";font-size:30px;font-weight:900;line-height: 40px;}
+.simhei35 {font-family: "simhei";font-size:35px;font-weight:900;line-height: 40px;color:#333333;}
+.simhei40 {font-family: "simhei";font-size:40px;font-weight:900;line-height: 50px;}
+.simhei30 {font-family: "simhei";font-size:30px;font-weight:900;}
+.simhei50 {font-family: "simhei";font-size:50px;font-weight:900;line-height:60px;}
+.simhei60 {font-family: "simhei";font-size:60px;font-weight:900;line-height:70px;}
+.simhei80 {font-family: "simhei";font-size:80px;font-weight:900;}
+.simhei100 {font-family: "simhei";font-size:100px;font-weight:900;}
+.simhei30_green {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #00ff00;line-height: 40px;}
+.simhei30_red {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #ff0000;line-height: 40px;}
+.simhei30_light_red {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #ff5555;line-height: 40px;}
+.simhei30_yellow {font-family: "simhei";font-size:30px;font-weight:900;COLOR: #fc9400;line-height: 40px;}
+.simhei40_green {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #00ff00;line-height: 70px;}
+.simhei40_red {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #ff0000;line-height: 70px;}
+.simhei40_yellow {font-family: "simhei";font-size:40px;font-weight:900;COLOR: #fc9400;line-height: 70px;}
+.simhei50_green {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #00ff00;line-height: 85px;}
+.simhei50_red {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #ff0000;line-height: 85px;}
+.simhei50_yellow {font-family: "simhei";font-size:50px;font-weight:900;COLOR: #fc9400;line-height: 85px;}
+.simhei60_green {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #00ff00;line-height: 85px;}
+.simhei60_red {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #ff0000;line-height: 85px;}
+.simhei60_yellow {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #fc9400;line-height: 85px;}
+.red60 {font-family: "simhei";font-size:60px;font-weight:900;COLOR: #ff0000;}
+.fix_right_down{position:relative;height:80px;width:80px;position: fixed ! important; right:0px; bottom:0px;}
+</style>
+<body leftmargin=10 topmargin=10>
+<a href=历史_分数段1.htm class=button2>5分一段</a>&nbsp;
+<a href=历史_分数段2.htm class=button1_white>10分一段</a>&nbsp;
+<a href=历史_分数段3.htm class=button1_white>15分一段</a>&nbsp;
+<a href=历史_分数段4.htm class=button1_white>20分一段</a>&nbsp;
+<a href=历史_分数段5.htm class=button1_white>25分一段</a>&nbsp;
+<a href=历史_分数段6.htm class=button1_white>30分一段</a>&nbsp;
+<a href=历史_分数段7.htm class=button1_white>50分一段</a>&nbsp;
+<br><br>
+<script src=echarts.js charset='UTF-8'></script><script src=feng1.js  charset='UTF-8'></script>
+<div id=main  style='width:1200px;height:500px;'></div>
+<script type=text/javascript  charset='UTF-8'>var myChart=echarts.init(document.getElementById('main'),'feng1');var option={title: {text: '2023学年上学期高三12月市调研 历史 分数段百分比',subtext:''},
+toolbox: {x:'left',},grid: {left: '0%',right: '8%',bottom: '5%',containLabel: true},dataZoom:{show:true,realtime:true,start : 0,end:100},tooltip : {trigger: 'item'},
+grid:{left:0,right:300},legend: { x:'right',data:['区属', '全区',
+'美术',
+'13中',
+'16中',
+'16中水荫',
+'17中',
+'3中',
+'7中',
+'培正',
+'省实越秀',
+'育才',
+],
+selected:{
+'区属':true,'全区':true,
+'美术':false,
+'13中':false,
+'16中':false,
+'16中水荫':false,
+'17中':false,
+'3中':false,
+'7中':false,
+'培正':false,
+'省实越秀':false,
+'育才':false,
+}
+}, 
+xAxis: {name:'分数段',
+data: [
+'1分→4.5分',
+'5分→9.5分',
+'10分→14.5分',
+'15分→19.5分',
+'20分→24.5分',
+'25分→29.5分',
+'30分→34.5分',
+'35分→39.5分',
+'40分→44.5分',
+'45分→49.5分',
+'50分→54.5分',
+'55分→59.5分',
+'60分→64.5分',
+'65分→69.5分',
+'70分→74.5分',
+'75分→79.5分',
+'80分→84.5分',
+'85分→89.5分',
+'90分→94.5分',
+'95分→100分',
+ ]},
+yAxis: {name:'百分比'},
+series: [
+{label:{normal:{show: true,position:'top'}},name: '区属' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0.14,
+0.41,
+0.55,
+1.09,
+4.38,
+7.11,
+10.67,
+18.60,
+18.88,
+20.66,
+11.90,
+3.97,
+1.37,
+0.27,
+0,
+0,
+]},
+{name: '全区' , label:{normal:{show: true,position:'top'}},type: 'bar',
+data: [
+0,
+0.20,
+0,
+0.61,
+1.73,
+4.37,
+5.80,
+7.53,
+6.10,
+7.83,
+9.16,
+14.24,
+14.04,
+15.36,
+8.85,
+2.95,
+1.02,
+0.20,
+0,
+0,
+]},
+{name: '美术' , type: 'bar',
+data: [
+0,
+0.87,
+0,
+2.62,
+6.55,
+16.59,
+20.96,
+25.76,
+10.48,
+10.04,
+4.37,
+1.75,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+]},
+{name: '13中' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+3.70,
+7.41,
+18.52,
+35.19,
+22.22,
+7.41,
+5.56,
+0,
+0,
+0,
+0,
+]},
+{name: '16中' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+4.94,
+4.94,
+7.41,
+22.22,
+14.81,
+22.22,
+18.52,
+3.70,
+0,
+1.23,
+0,
+0,
+]},
+{name: '16中水荫' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+2.44,
+0,
+0,
+4.88,
+12.20,
+26.83,
+19.51,
+24.39,
+7.32,
+2.44,
+0,
+0,
+0,
+0,
+]},
+{name: '17中' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+1.41,
+1.41,
+5.63,
+12.68,
+11.27,
+21.13,
+16.90,
+7.04,
+12.68,
+7.04,
+2.82,
+0,
+0,
+0,
+0,
+]},
+{name: '3中' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0.83,
+0.83,
+0.83,
+0.83,
+8.33,
+6.67,
+18.33,
+23.33,
+23.33,
+10.83,
+4.17,
+1.67,
+0,
+0,
+0,
+]},
+{name: '7中' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1.89,
+3.77,
+7.55,
+14.15,
+13.21,
+21.70,
+21.70,
+10.38,
+4.72,
+0.94,
+0,
+0,
+]},
+{name: '培正' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+2.60,
+2.60,
+6.49,
+20.78,
+18.18,
+23.38,
+20.78,
+3.90,
+1.30,
+0,
+0,
+0,
+]},
+{name: '省实越秀' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+0,
+0,
+1.49,
+2.99,
+7.46,
+14.93,
+16.42,
+16.42,
+20.90,
+13.43,
+5.97,
+0,
+0,
+0,
+0,
+0,
+]},
+{name: '育才' , type: 'bar',
+data: [
+0,
+0,
+0,
+0,
+1.18,
+1.18,
+0,
+0,
+7.06,
+8.24,
+15.29,
+18.82,
+20.00,
+20.00,
+4.71,
+1.18,
+2.35,
+0,
+0,
+0,
+]},
+]};myChart.setOption(option);window.onresize = function(){myChart.resize();}</script>
+<br><br>
+<table width=1590px style=border-collapse:collapse; border=1 bordercolor=#CC3333 cellpadding=4>
+<tr>
+<th width=130px>分数段</th><th width=130px bgcolor=#E1FFE2 class=全区>全区</th ><th width=130px bgcolor=#DDDDFF><span class=区属>区属</span></th>
+<th width=120px>美术</th>
+<th width=120px>13中</th>
+<th width=120px>16中</th>
+<th width=120px>16中水荫</th>
+<th width=120px>17中</th>
+<th width=120px>3中</th>
+<th width=120px>7中</th>
+<th width=120px>培正</th>
+<th width=120px>省实越秀</th>
+<th width=120px>育才</th>
+</tr>
+<tr>
+<th align=left nowrap>1分→4.5分</th>
+<td bgcolor=#E1FFE2 class=全区></td>
+<td bgcolor=#DDDDFF></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>5分→9.5分</th>
+<td bgcolor=#E1FFE2 class=全区>2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.20%</span></td>
+<td bgcolor=#DDDDFF></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.87%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr>
+<th align=left nowrap>10分→14.5分</th>
+<td bgcolor=#E1FFE2 class=全区></td>
+<td bgcolor=#DDDDFF></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>15分→19.5分</th>
+<td bgcolor=#E1FFE2 class=全区>6人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.61%</span></td>
+<td bgcolor=#DDDDFF></td>
+<td >6人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.62%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr>
+<th align=left nowrap>20分→24.5分</th>
+<td bgcolor=#E1FFE2 class=全区>17人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.73%</span></td>
+<td bgcolor=#DDDDFF>1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.14%</span></td>
+<td >15人 <span style=font-size:14px;color:#ff0000;font-weight:100;>6.55%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.18%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>25分→29.5分</th>
+<td bgcolor=#E1FFE2 class=全区>43人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.37%</span></td>
+<td bgcolor=#DDDDFF>3人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.41%</span></td>
+<td >38人 <span style=font-size:14px;color:#ff0000;font-weight:100;>16.59%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.41%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.83%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.18%</span></td>
+</tr>
+<tr>
+<th align=left nowrap>30分→34.5分</th>
+<td bgcolor=#E1FFE2 class=全区>57人 <span style=font-size:14px;color:#ff0000;font-weight:100;>5.80%</span></td>
+<td bgcolor=#DDDDFF>4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.55%</span></td>
+<td >48人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.96%</span></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.44%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.41%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.83%</span></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.49%</span></td>
+<td ></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>35分→39.5分</th>
+<td bgcolor=#E1FFE2 class=全区>74人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.53%</span></td>
+<td bgcolor=#DDDDFF>8人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.09%</span></td>
+<td >59人 <span style=font-size:14px;color:#ff0000;font-weight:100;>25.76%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>5.63%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.83%</span></td>
+<td ></td>
+<td ></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.99%</span></td>
+<td ></td>
+</tr>
+<tr>
+<th align=left nowrap>40分→44.5分</th>
+<td bgcolor=#E1FFE2 class=全区>60人 <span style=font-size:14px;color:#ff0000;font-weight:100;>6.10%</span></td>
+<td bgcolor=#DDDDFF>32人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.38%</span></td>
+<td >24人 <span style=font-size:14px;color:#ff0000;font-weight:100;>10.48%</span></td>
+<td ></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.94%</span></td>
+<td ></td>
+<td >9人 <span style=font-size:14px;color:#ff0000;font-weight:100;>12.68%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.83%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.89%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.60%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.46%</span></td>
+<td >6人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.06%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>45分→49.5分</th>
+<td bgcolor=#E1FFE2 class=全区>77人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.83%</span></td>
+<td bgcolor=#DDDDFF>52人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.11%</span></td>
+<td >23人 <span style=font-size:14px;color:#ff0000;font-weight:100;>10.04%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>3.70%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.94%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.88%</span></td>
+<td >8人 <span style=font-size:14px;color:#ff0000;font-weight:100;>11.27%</span></td>
+<td >10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>8.33%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>3.77%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.60%</span></td>
+<td >10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>14.93%</span></td>
+<td >7人 <span style=font-size:14px;color:#ff0000;font-weight:100;>8.24%</span></td>
+</tr>
+<tr>
+<th align=left nowrap>50分→54.5分</th>
+<td bgcolor=#E1FFE2 class=全区>90人 <span style=font-size:14px;color:#ff0000;font-weight:100;>9.16%</span></td>
+<td bgcolor=#DDDDFF>78人 <span style=font-size:14px;color:#ff0000;font-weight:100;>10.67%</span></td>
+<td >10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.37%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.41%</span></td>
+<td >6人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.41%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>12.20%</span></td>
+<td >15人 <span style=font-size:14px;color:#ff0000;font-weight:100;>21.13%</span></td>
+<td >8人 <span style=font-size:14px;color:#ff0000;font-weight:100;>6.67%</span></td>
+<td >8人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.55%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>6.49%</span></td>
+<td >11人 <span style=font-size:14px;color:#ff0000;font-weight:100;>16.42%</span></td>
+<td >13人 <span style=font-size:14px;color:#ff0000;font-weight:100;>15.29%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>55分→59.5分</th>
+<td bgcolor=#E1FFE2 class=全区>140人 <span style=font-size:14px;color:#ff0000;font-weight:100;>14.24%</span></td>
+<td bgcolor=#DDDDFF>136人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.60%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.75%</span></td>
+<td >10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.52%</span></td>
+<td >18人 <span style=font-size:14px;color:#ff0000;font-weight:100;>22.22%</span></td>
+<td >11人 <span style=font-size:14px;color:#ff0000;font-weight:100;>26.83%</span></td>
+<td >12人 <span style=font-size:14px;color:#ff0000;font-weight:100;>16.90%</span></td>
+<td >22人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.33%</span></td>
+<td >15人 <span style=font-size:14px;color:#ff0000;font-weight:100;>14.15%</span></td>
+<td >16人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.78%</span></td>
+<td >11人 <span style=font-size:14px;color:#ff0000;font-weight:100;>16.42%</span></td>
+<td >16人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.82%</span></td>
+</tr>
+<tr>
+<th align=left nowrap>60分→64.5分</th>
+<td bgcolor=#E1FFE2 class=全区>138人 <span style=font-size:14px;color:#ff0000;font-weight:100;>14.04%</span></td>
+<td bgcolor=#DDDDFF>138人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.88%</span></td>
+<td ></td>
+<td >19人 <span style=font-size:14px;color:#ff0000;font-weight:100;>35.19%</span></td>
+<td >12人 <span style=font-size:14px;color:#ff0000;font-weight:100;>14.81%</span></td>
+<td >8人 <span style=font-size:14px;color:#ff0000;font-weight:100;>19.51%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.04%</span></td>
+<td >28人 <span style=font-size:14px;color:#ff0000;font-weight:100;>23.33%</span></td>
+<td >14人 <span style=font-size:14px;color:#ff0000;font-weight:100;>13.21%</span></td>
+<td >14人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.18%</span></td>
+<td >14人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.90%</span></td>
+<td >17人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.00%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>65分→69.5分</th>
+<td bgcolor=#E1FFE2 class=全区>151人 <span style=font-size:14px;color:#ff0000;font-weight:100;>15.36%</span></td>
+<td bgcolor=#DDDDFF>151人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.66%</span></td>
+<td ></td>
+<td >12人 <span style=font-size:14px;color:#ff0000;font-weight:100;>22.22%</span></td>
+<td >18人 <span style=font-size:14px;color:#ff0000;font-weight:100;>22.22%</span></td>
+<td >10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>24.39%</span></td>
+<td >9人 <span style=font-size:14px;color:#ff0000;font-weight:100;>12.68%</span></td>
+<td >28人 <span style=font-size:14px;color:#ff0000;font-weight:100;>23.33%</span></td>
+<td >23人 <span style=font-size:14px;color:#ff0000;font-weight:100;>21.70%</span></td>
+<td >18人 <span style=font-size:14px;color:#ff0000;font-weight:100;>23.38%</span></td>
+<td >9人 <span style=font-size:14px;color:#ff0000;font-weight:100;>13.43%</span></td>
+<td >17人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.00%</span></td>
+</tr>
+<tr>
+<th align=left nowrap>70分→74.5分</th>
+<td bgcolor=#E1FFE2 class=全区>87人 <span style=font-size:14px;color:#ff0000;font-weight:100;>8.85%</span></td>
+<td bgcolor=#DDDDFF>87人 <span style=font-size:14px;color:#ff0000;font-weight:100;>11.90%</span></td>
+<td ></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.41%</span></td>
+<td >15人 <span style=font-size:14px;color:#ff0000;font-weight:100;>18.52%</span></td>
+<td >3人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.32%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>7.04%</span></td>
+<td >13人 <span style=font-size:14px;color:#ff0000;font-weight:100;>10.83%</span></td>
+<td >23人 <span style=font-size:14px;color:#ff0000;font-weight:100;>21.70%</span></td>
+<td >16人 <span style=font-size:14px;color:#ff0000;font-weight:100;>20.78%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>5.97%</span></td>
+<td >4人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.71%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>75分→79.5分</th>
+<td bgcolor=#E1FFE2 class=全区>29人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.95%</span></td>
+<td bgcolor=#DDDDFF>29人 <span style=font-size:14px;color:#ff0000;font-weight:100;>3.97%</span></td>
+<td ></td>
+<td >3人 <span style=font-size:14px;color:#ff0000;font-weight:100;>5.56%</span></td>
+<td >3人 <span style=font-size:14px;color:#ff0000;font-weight:100;>3.70%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.44%</span></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.82%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.17%</span></td>
+<td >11人 <span style=font-size:14px;color:#ff0000;font-weight:100;>10.38%</span></td>
+<td >3人 <span style=font-size:14px;color:#ff0000;font-weight:100;>3.90%</span></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.18%</span></td>
+</tr>
+<tr>
+<th align=left nowrap>80分→84.5分</th>
+<td bgcolor=#E1FFE2 class=全区>10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.02%</span></td>
+<td bgcolor=#DDDDFF>10人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.37%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.67%</span></td>
+<td >5人 <span style=font-size:14px;color:#ff0000;font-weight:100;>4.72%</span></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.30%</span></td>
+<td ></td>
+<td >2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>2.35%</span></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>85分→89.5分</th>
+<td bgcolor=#E1FFE2 class=全区>2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.20%</span></td>
+<td bgcolor=#DDDDFF>2人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.27%</span></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>1.23%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td >1人 <span style=font-size:14px;color:#ff0000;font-weight:100;>0.94%</span></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr>
+<th align=left nowrap>90分→94.5分</th>
+<td bgcolor=#E1FFE2 class=全区></td>
+<td bgcolor=#DDDDFF></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+<tr bgcolor=#ffffcc>
+<th align=left nowrap>95分→100分</th>
+<td bgcolor=#E1FFE2 class=全区></td>
+<td bgcolor=#DDDDFF></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+</table>
+<br><br><table width=5000px style=border-collapse:collapse; border=0 bordercolor=#CC3333 cellpadding=4>
+</table>
