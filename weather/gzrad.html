@@ -21,7 +21,7 @@
 				setInterval(function() {
 					$('#radarImage').attr('src', images[currentIndex].url);
 					currentIndex = (currentIndex + 1) % images.length;
-				}, 800); // 每隔5秒钟切换一张图片
+				}, 333); // 每隔5秒钟切换一张图片
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				console.log(errorThrown);
