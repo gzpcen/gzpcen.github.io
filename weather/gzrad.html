@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Radar Images</title>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Radar Image</title>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+.radarImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+  </style>
 </head>
 <body>
-<div id="imageContainer">
-  <div class="imageBox"> <img id="radarImage1" src="" alt=""> </div>
-  <div class="imageBox"> <img id="radarImage2" src="" alt=""> </div>
-  <div class="imageBox"> <img id="radarImage3" src="" alt=""> </div>
-  <div class="imageBox"> <img id="radarImage4" src="" alt=""> </div>
-</div>
-<script src="1.js" language="javascript"></script>
-<style>
-        #imageContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <div class="grid-container">
+    <img class="radarImage" src="" alt="Radar Image">
+    <img class="radarImage" src="" alt="Radar Image">
+    <img class="radarImage" src="" alt="Radar Image">
+    <img class="radarImage" src="" alt="Radar Image">
+  </div>
 
-        .imageBox {
-            width: 50%;
-        }
+  <script>
+    // 获取当前时间并转换为UTC时间
+    var currentDateTime = new Date();
+    var utcDateTime = currentDateTime.toUTCString();
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+    // 检查分钟数是否为6的倍数
+    if (currentDateTime.getMinutes() % 6 !== 0) {
+      // 如果不是，将时间往前推到最近的6的倍数分钟
+      var minutesToSubtract = currentDateTime.getMinutes() % 6;
+      currentDateTime.setMinutes(currentDateTime.getMinutes() - minutesToSubtract);
+    }
+
+    // 将当前时间再提前12分钟
+    currentDateTime.setMinutes(currentDateTime.getMinutes() - 12);
+
+    // 格式化日期时间
+    function formatDate(date) {
+      var year = date.getUTCFullYear();
+      var month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
+      var day = date.getUTCDate().toString().padStart(2, '0');
+      var hour = date.getUTCHours().toString().padStart(2, '0');
+      var minute = date.getUTCMinutes().toString().padStart(2, '0');
+      var formattedDate = year + month + day + hour + minute;
+
+      return formattedDate;
+    }
+
+    // 替换URL中的时间部分并更新图片的src属性
+    var imageUrls = [
+      "https://www.gdfltq.com:8989/datav3/singleStationRadarData/singleStationRadarDataPic/Z_RADR_I_Z9200_202312311242_P_DOR_SA_R_10_230_15.200.png",
+      "https://www.gdfltq.com:8989/datav3/singleStationRadarData/singleStationRadarDataPic/Z_RADR_I_Z9200_202312311242_P_DOR_SA_V_5_115_15.200.png",
+      "https://www.gdfltq.com:8989/datav3/singleStationRadarData/singleStationRadarDataPic/Z_RADR_I_Z9200_202312311242_P_DOR_SA_VIL_40X40_230_NUL.200.png",
+      "https://www.gdfltq.com:8989/datav3/singleStationRadarData/singleStationRadarDataPic/Z_RADR_I_Z9200_202312311242_P_DOR_SA_VWP_20_NUL_NUL.200.png"
+    ];
+
+    for (var i = 0; i < imageUrls.length; i++) {
+      var updatedUrl = imageUrls[i].replace("202312311242", formatDate(currentDateTime));
+      document.getElementsByClassName("radarImage")[i].src = updatedUrl;
+    }
+  </script>
 </body>
 </html>
