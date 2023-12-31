@@ -1,32 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Radar Images</title>
-	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Radar Images</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-	<div id="imageContainer">
-		<img id="radarImage" src="" alt="">
-	</div>
-	<script type="text/javascript">
-		// 请求数据
-		$.ajax({
-			url: 'https://www.gdfltq.com/fl-service/v3/more/SingleStationRadar/current/gz/speed',
-			dataType: 'json',
-			success: function(data) {
-				var images = data.data;
-				var currentIndex = 0;
+    <div id="imageContainer">
+        <div class="imageBox">
+            <img id="radarImage1" src="" alt="">
+        </div>
+        <div class="imageBox">
+            <img id="radarImage2" src="" alt="">
+        </div>
+        <div class="imageBox">
+            <img id="radarImage3" src="" alt="">
+        </div>
+        <div class="imageBox">
+            <img id="radarImage4" src="" alt="">
+        </div>
+    </div>
+    <script type="text/javascript">
+        var imageUrls1 = [];
+        var imageUrls2 = [];
+        var imageUrls3 = [];
+        var imageUrls4 = [];
 
-				// 开始轮流播放
-				setInterval(function() {
-					$('#radarImage').attr('src', images[currentIndex].url);
-					currentIndex = (currentIndex + 1) % images.length;
-				}, 333); // 每隔5秒钟切换一张图片
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				console.log(errorThrown);
-			}
-		});
-	</script>
+        // 获取第一组图片列表
+        $.ajax({
+            url: 'https://www.gdfltq.com/fl-service/v3/more/SingleStationRadar/current/gz/ref',
+            dataType: 'json',
+            success: function(data) {
+                imageUrls1 = data.data;
+                startSlideshow(); // 获取成功后开始播放
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
+        // 获取第二组图片列表
+        $.ajax({
+            url: 'https://www.gdfltq.com/fl-service/v3/more/SingleStationRadar/current/gz/speed',
+            dataType: 'json',
+            success: function(data) {
+                imageUrls2 = data.data;
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
+        // 获取第三组图片列表
+        $.ajax({
+            url: 'https://www.gdfltq.com/fl-service/v3/more/SingleStationRadar/current/gz/vil',
+            dataType: 'json',
+            success: function(data) {
+                imageUrls3 = data.data;
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
+        // 获取第四组图片列表
+        $.ajax({
+            url: 'https://www.gdfltq.com/fl-service/v3/more/SingleStationRadar/current/gz/vmp',
+            dataType: 'json',
+            success: function(data) {
+                imageUrls4 = data.data;
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
+        function startSlideshow() {
+            var currentIndex1 = 0;
+            var currentIndex2 = 0;
+            var currentIndex3 = 0;
+            var currentIndex4 = 0;
+
+            // 开始轮流播放
+            setInterval(function() {
+                $('#radarImage1').attr('src', imageUrls1[currentIndex1].url);
+                currentIndex1 = (currentIndex1 + 1) % imageUrls1.length;
+
+                $('#radarImage2').attr('src', imageUrls2[currentIndex2].url);
+                currentIndex2 = (currentIndex2 + 1) % imageUrls2.length;
+
+                $('#radarImage3').attr('src', imageUrls3[currentIndex3].url);
+                currentIndex3 = (currentIndex3 + 1) % imageUrls3.length;
+
+                $('#radarImage4').attr('src', imageUrls4[currentIndex4].url);
+                currentIndex4 = (currentIndex4 + 1) % imageUrls4.length;
+            }, 500); // 每隔5秒钟切换一组图片
+        }
+    </script>
+    <style>
+        #imageContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .imageBox {
+            width: 50%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
 </body>
 </html>
